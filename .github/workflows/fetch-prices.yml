@@ -28,5 +28,5 @@ jobs:
                   git checkout --force data
                   cp /tmp/prices.json prices.json
                   git add prices.json
-                  git diff --cached --quiet || git commit -m "Update prices $(date -u +%Y-%m-%d)"
+                  git diff --cached --quiet || git commit -m "Update prices $(date -u +'%Y-%m-%d %H-%M-%S')"
                   git push origin data
